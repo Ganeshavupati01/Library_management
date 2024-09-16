@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #800080;
+    color: white;
+    padding: 45px; /* Increased padding for height */
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start; /* Align the nav items to the left */
+    background-color: #550055; /* Changed background color */
+    padding: 0;
+  /* Add margin to the left to space out from the edge */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Reduced padding for smaller size */
+    margin: 0 5px; /* Reduced gap between links */
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: #800080;
+    transform: scale(1.05);
+}
+
+.main-container {
+    display: flex;
+}
+
+.side-nav {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    height: 700px;
+}
+
+.side-nav a {
+    display: block;
+    color: #800080;
+    text-decoration: none;
+    padding: 20px 20px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.side-nav a:hover {
+    color: #660066;
+    background-color: #c0c0c0;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 80px); /* Ensure iframe occupies remaining height */
+    border: none;
+}
